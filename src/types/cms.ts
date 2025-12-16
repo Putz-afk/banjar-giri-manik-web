@@ -10,20 +10,21 @@ export interface CeremonyItem {
     instruction: string;
     mantra?: string;
     position: number;
-    sub_items: CeremonySubItem[];
+    ceremony_sub_items: CeremonySubItem[];
 }
 
 export interface CeremonySection {
     id: string;
     title?: string;
     position: number;
-    items: CeremonyItem[];
+    ceremony_items: CeremonyItem[];
 }
 
 export interface Ceremony {
     id: string;
     title: string;
+    slug: string;
     schedule?: string;
     banten?: string;
-    sections: CeremonySection[];
+    ceremony_sections: CeremonySection[];
 }
