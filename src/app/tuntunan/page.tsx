@@ -1,6 +1,5 @@
 import { PageHeader } from "@/components/layout/PageHeader";
 import { CeremonyViewer } from "@/components/features/CeremonyViewer";
-import { DEMO_CEREMONIES } from "@/data/ceremony-demo";
 import Link from "next/link";
 import { Card, CardContent, CardHeader, CardFooter, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
