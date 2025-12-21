@@ -26,5 +26,6 @@ export interface Ceremony {
     slug: string;
     schedule?: string;
     banten?: string;
+    is_published?: boolean;
     ceremony_sections: CeremonySection[];
 }

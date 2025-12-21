@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
-import { Plus, Pencil, Trash2, Eye } from "lucide-react";
+import { Plus, Pencil, Eye } from "lucide-react";
+import { DeleteCeremonyButton } from "@/components/features/DeleteCeremonyButton";
 import {
   Table,
   TableBody,
@@ -88,9 +89,10 @@ export default async function AdminTuntunanPage() {
                           <Pencil size={14} /> Edit
                         </Button>
                       </Link>
-                      <Button variant="ghost" size="icon" className="text-red-400 hover:text-red-600 hover:bg-red-50">
-                        <Trash2 size={16} />
-                      </Button>
+                      <DeleteCeremonyButton
+                        ceremonyId={item.id}
+                        ceremonyTitle={item.title}
+                      />
                     </div>
                   </TableCell>
                 </TableRow>
