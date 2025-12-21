@@ -112,6 +112,7 @@ export type Database = {
           ceremony_id: string
           created_at: string | null
           id: string
+          instruction: string | null
           position: number
           title: string | null
         }
@@ -119,6 +120,7 @@ export type Database = {
           ceremony_id: string
           created_at?: string | null
           id?: string
+          instruction?: string | null
           position?: number
           title?: string | null
         }
@@ -126,6 +128,7 @@ export type Database = {
           ceremony_id?: string
           created_at?: string | null
           id?: string
+          instruction?: string | null
           position?: number
           title?: string | null
         }

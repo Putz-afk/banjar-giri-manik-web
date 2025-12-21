@@ -1,3 +1,4 @@
+// src/app/admin/tuntunan/page.tsx
 import Link from "next/link";
 import { supabase } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
@@ -26,7 +27,7 @@ export default async function AdminTuntunanPage() {
   }
 
   return (
-    <div className="p-8 max-w-[1400px] mx-auto">
+    <div className="pt-24 p-8 max-w-[1400px] mx-auto">
 
       {/* Header */}
       <div className="flex justify-between items-center mb-8">
